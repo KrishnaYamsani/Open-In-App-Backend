@@ -14,7 +14,7 @@ const change_priorities = cron.schedule('0 8 * * *',() => {
     timezone: "Asia/Kolkata"
 });
 
-const make_call = cron.schedule('* * * * *', async () => {
+const make_call = cron.schedule('0 9 * * *', async () => {
     try {
       const tasks = await calls.fetchTasks();
 
